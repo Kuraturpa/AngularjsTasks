@@ -1,0 +1,9 @@
+<div class="hero-unit" ng-init="refresh()">
+	<h1>'Allo, 'Allo!</h1>
+	<input ng-model="newname" type="text" id="newtask">
+	<button ng-click="add(newname)">Add</button>
+	<ul ng-show="tasks.length">
+		<row ng-repeat="task in tasks" item="task" remove="remove(task.id)" edit="edit(task)"></row>
+	</ul>
+	<p ng-show="!tasks.length">No tasks to do.</p>
+</div>

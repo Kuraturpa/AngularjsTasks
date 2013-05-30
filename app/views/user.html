@@ -1,0 +1,7 @@
+<p>This is the user view.</p>
+<div ng-show="check()">
+	{{user.attributes.username}}
+	{{user.attributes.email}}
+	<button ng-click="logout()">Logout</button>
+</div>
+<p ng-show="!check()">Login or register</p>
